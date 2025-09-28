@@ -1,0 +1,65 @@
+/* Basic reset & typography */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #0e1a2b;            /* high contrast text */
+  background-color: #f7f9fc;
+  /* Image background applied to ALL pages via a tiny SVG pattern (meets requirement) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='16' height='16' fill='%23ffffff'/%3E%3Ccircle cx='8' cy='8' r='1' fill='%23dfe7f3'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 6px 18px rgba(14,26,43,0.07);
+  border-radius: 16px;
+}
+
+header, nav, main, footer { margin-bottom: 1rem; }
+header h1 { margin: 0.25rem 0 0.5rem; font-size: 1.75rem; }
+header p { margin: 0; color: #43536b; }
+
+.skip-link {
+  position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus {
+  position: static; width: auto; height:auto; padding: .5rem 1rem; background:#ffd54f; color:#000; border-radius:8px;
+}
+
+nav ul {
+  list-style: none; padding: 0; margin: 0; display: flex; gap: .75rem; flex-wrap: wrap;
+}
+nav a {
+  display: inline-block; padding: .4rem .75rem; border-radius: 999px;
+  text-decoration: none; color: #0e1a2b; background: #e9f1ff; border: 1px solid #cfe1ff;
+}
+nav a[aria-current="page"] { background: #bfd7ff; font-weight: 600; }
+
+h2 { margin-top: 1.25rem; font-size: 1.4rem; }
+
+figure { margin: 1rem 0; }
+img.media {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e5ecf6;
+  box-shadow: 0 8px 20px rgba(14,26,43,0.06);
+}
+
+.info {
+  background: #f0f6ff;
+  border: 1px solid #d6e6ff;
+  padding: .75rem 1rem;
+  border-radius: 12px;
+}
+
+footer {
+  border-top: 1px solid #e5ecf6; padding-top: .75rem; color: #5b6d86; font-size: 0.95rem;
+}
