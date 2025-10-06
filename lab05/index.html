@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Web Standards – Lab05 Blog</title>
+
+  <!-- External CSS link added -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ====== COLOR THEME AND LAYOUT ====== */
+    body {
+      background-color: #0c336e;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header.site-header {
+      background-color: #2f7d32;
+      color: rgb(248, 243, 243);
+      text-align: center;
+      padding: 15px;
+      border-bottom: 4px solid #1f5a23;
+    }
+
+    .top-nav {
+      background-color: #d98282;
+      padding: 10px;
+      border-bottom: 1px solid #8a6060;
+      text-align: center;
+    }
+
+    .top-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .top-nav a {
+      color: #0645ad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover {
+      color: #333333;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    article.post {
+      background-color: rgb(231, 141, 141);
+      border: 1px solid #d9e2ec;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .highlight {
+      background-color: #fff7cc;
+    }
+
+    .resources {
+      background-color: #59a0a0;
+      border-left: 4px solid #2f7d32;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar {
+      background-color: #c89d46;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer.site-footer {
+      background-color: #578dcf;
+      color: #1f2937;
+      border-top: 1px solid #c7d7ee;
+      text-align: center;
+      padding: 12px;
+    }
+
+    a {
+      color: #0645ad;
+    }
+
+    a:hover {
+      color: #c21f39;
+    }
+
+    /* ====== RESPONSIVE LAYOUT ====== */
+    @media (min-width: 900px) {
+      .wrapper {
+        display: flex;
+        gap: 15px;
+      }
+
+      .content {
+        flex: 3;
+      }
+
+      .sidebar {
+        flex: 1;
+        height: fit-content;
+      }
+
+      .float-right {
+        float: right;
+        margin-left: 15px;
+        width: 300px;
+        max-width: 45%;
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="top" class="site-header">
+    <div class="container">
+      <h1>Learning Web Standards – Blog</h1>
+      <p class="meta">CSIT-121 • Lab05 • Published by Student</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav aria-label="Post links" class="top-nav">
+    <ul>
+      <li><a href="#lab02-reflection">Lab02 Reflection</a></li>
+      <li><a href="#lab03-reflection">Lab03 Reflection</a></li>
+      <li><a href="#lab05-reflection">Lab05 Reflection (Best Practices)</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="wrapper">
+    <main class="content">
+
+      <!-- Blog 1 -->
+      <article class="post" id="lab02-reflection">
+        <header>
+          <h2>Reflection #1 (from Lab02)</h2>
+          <p class="meta">
+            <time datetime="2024-08-06">August 6, 2024</time> • Topic: HTML Structure &amp; Web Standards
+          </p>
+        </header>
+
+        <p>
+          As an active learner, I was very excited to work on this HTML page. I have already learned what HTML is and how to structure it. On this page, I learned how to organize paragraphs, headings, and lists in a clear and easily understandable way.
+        </p>
+
+        <h3>Key Takeaways</h3>
+        <ul>
+          <li>What HTML is and how it works.</li>
+          <li>How to structure content semantically.</li>
+          <li>How to create professional, valid HTML pages.</li>
+        </ul>
+
+        <section class="resources">
+          <h3>Resources</h3>
+          <ol>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">MDN – HTML basics</a></li>
+            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">W3Schools – HTML Introduction</a></li>
+          </ol>
+        </section>
+
+        <p><a href="#top" class="back">Back to top</a></p>
+      </article>
+
+      <!-- Blog 2 -->
+      <article class="post" id="lab03-reflection">
+        <header>
+          <h2>Reflection #2 (this module)</h2>
+          <p class="meta">
+            <time datetime="2025-09-20">September 20, 2025</time> • Topic: Applying Embedded CSS
+          </p>
+        </header>
+
+        <img class="float-right" src="https://placehold.co/300x180" alt="Small example image">
+
+        <p>
+         During this learning period, I have learned several new things that I never knew before. Now I can proudly say that I have gained practical knowledge, such as: the <span class="highlight">embedded CSS</span> method inside the <code>&lt;head&gt;</code> that styles the whole page. Additionally, after completing Lab02, I clearly understand the article and body elements, how to set background and text colors, how to properly create headings and paragraphs, and how to apply professional styling. Moreover, I have made one <strong>ID selector</strong> for the header and footer, and one <strong>class selector</strong> for the post card. All in all, this module improved my understanding of semantic structure and styling consistency, making my page readable, reachable, and professional.
+        </p>
+
+        <section class="resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">MDN – Learn CSS</a></li>
+            <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a></li>
+          </ul>
+        </section>
+
+        <p><a href="#top" class="back">Back to top</a></p>
+      </article>
+
+      <!-- Blog 3 -->
+      <article class="post" id="lab05-reflection">
+        <header>
+          <h2>Lab05 Reflection – Best Design Practices</h2>
+          <p class="meta">
+            <time datetime="2025-10-05">October 5, 2025</time> • Topic: Responsive Web Design
+          </p>
+        </header>
+
+        <p>
+          In my perspective, it should start with a single-column layout that looks good on a mobile screen. Use comfortable spacing, and to make it suitable for bigger screens, one media query should be added. It should also ensure that the colors have the best contrast. Place the navigation menu where it is easy to reach at the top, and the pages can be resized by the browser or viewed on devices like phones and tablets.
+        </p>
+
+        <h3>Why Responsive Web Design Matters</h3>
+        <p>
+         Responsive design is one of the most important design approaches that works seamlessly across different devices such as phones, tablets, and desktops. It helps improve performance, usability, and the overall experience for all users. Another important benefit is that it reduces the need to maintain separate pages for different devices.
+        </p>
+
+        <section class="resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">MDN – Media Queries</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout" target="_blank">MDN – Flexbox</a></li>
+          </ul>
+        </section>
+
+        <p><a href="#top" class="back">Back to top</a></p>
+      </article>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#lab02-reflection">Go to Lab02</a></li>
+        <li><a href="#lab03-reflection">Go to Lab03</a></li>
+        <li><a href="#lab05-reflection">Go to Lab05</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Student. All rights reserved.</p>
+      <p class="meta">Semantic HTML and responsive design created for Lab05.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
