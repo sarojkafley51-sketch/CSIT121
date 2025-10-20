@@ -1,0 +1,184 @@
+/* ============================= */
+/* General Styles */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* Header */
+/* ============================= */
+
+.site-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin-bottom: 0.2rem;
+}
+
+.site-header .meta {
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/* Navigation */
+/* ============================= */
+
+.top-nav {
+  background-color: #333;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-nav li {
+  margin: 0.5rem 1rem;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Main Content */
+/* ============================= */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.post {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-bottom: 0.5rem;
+}
+
+.post .meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+/* Highlight text */
+.highlight {
+  background-color: #ffeb3b;
+  padding: 0 3px;
+}
+
+/* Float image right for desktop */
+.float-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+/* Resources section */
+.resources {
+  margin-top: 1rem;
+}
+
+.resources h3 {
+  margin-bottom: 0.5rem;
+}
+
+.resources ul, .resources ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Back to top link */
+.back {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #4CAF50;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.site-footer .meta {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
+
+/* Mobile first: single-column layout */
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Float images right only on desktop */
+  .float-right {
+    float: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
