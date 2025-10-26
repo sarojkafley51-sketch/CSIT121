@@ -1,0 +1,71 @@
+<!-- CSIT121 Lab 100 - UI/UX Evaluation (Author: Saroj Kafle). Simple, student-written file. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 06 – UI/UX Evaluation (Blue Water Baltimore)</title>
+  <!-- Requirement: embedded styles (not external). Keep it very simple. -->
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 16px; }
+    h1, h2 { margin-top: 1rem; }
+    figure { margin: 1rem 0; }
+    img { max-width: 95%; height: auto; border: 1px solid #ccc; }
+    figcaption { font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSIT121 – Lab 06: UI/UX Evaluation</h1>
+    <p><strong>Student:</strong> Saroj Kafle<br>
+       <strong>College:</strong> Community College of Baltimore County (CCBC)<br>
+       <strong>Term:</strong> Fall 2025
+    </p>
+  </header>
+
+  <main>
+    <h2>1) What is the URL of the website?</h2>
+    <p><a href="https://bluewaterbaltimore.org/" target="_blank" rel="noopener">https://bluewaterbaltimore.org/</a></p>
+
+    <h2>2) What is the name of the website?</h2>
+    <p>Blue Water Baltimore</p>
+
+    <h2>3) Who is the site's target audience?</h2>
+    <p>Baltimore-area residents, volunteers, donors, and people interested in clean water and environmental health.</p>
+
+    <h2>4) How is the site organized?</h2>
+    <p>Clear top navigation (About, Programs, Take Action, Blog, etc.). Homepage sections highlight mission, news, events, and donate options.</p>
+
+    <h2>5) CRAP Design Principle (one example)</h2>
+    <p><strong>Contrast:</strong> Dark logo/accents on a light background help buttons and headings stand out.</p>
+
+    <h2>6) Accessibility Checker (Audit Score)</h2>
+    <p>I ran the homepage in <strong>Lighthouse</strong> and saw an Accessibility score of <strong>91/100</strong>. (Tool used: Lighthouse.)</p>
+
+    <h2>7) Effectiveness</h2>
+    <p>Effective: I searched “water report” and quickly found relevant reports from prior years.</p>
+
+    <h2>8) Efficiency</h2>
+    <p>Efficient navigation and working links; tasks like donating or finding info are quick.</p>
+
+    <h2>9) Engagement</h2>
+    <p>Professional and friendly photos with a water/green palette that fits an environmental nonprofit.</p>
+
+    <h2>10) Recommendation</h2>
+    <p>Add short video on the landing section (in addition to photos) to increase engagement; also ensure every image has alt text.</p>
+
+    <h2>Screenshot of the Website</h2>
+    <figure>
+      <img src="screenshot.jpg" alt="Blue Water Baltimore homepage showing navigation and hero banner">
+      <figcaption>Homepage screenshot used for this evaluation.</figcaption>
+    </figure>
+
+    <h2>Process Notes (Tasks 4–12)</h2>
+    <p>Created <code>lab06</code> folder; made <code>index.html</code>; previewed with Live Server; tested locally; validated with W3C; pushed folder to my GitHub repo; tested the published link.</p>
+  </main>
+
+  <footer>
+    <p>Simple student work (no advanced code). Last updated: October 2025.</p>
+  </footer>
+</body>
+</html>
