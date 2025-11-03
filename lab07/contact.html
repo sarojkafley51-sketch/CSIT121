@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This title tab I plan to give a page name -->
+    <title>Contact Us </title>
+    <!-- I am linking the external CSS page to the html using the following code-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- I try to keep the content of Navigation page here-->
+<header>
+  <!-- This is navigation bar-->
+<nav class="top-nav">
+  <ul>
+    <li><a href="./tierlist.html">About Us</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+<main>
+    <!--This holds the contact us section of the page-->
+<h3>
+    Welcome to the Contact us page.
+    Here you can reach out to us if you have any question to our fruits information and advice to us. 
+    We appreciate your time and concern.
+    Please fill the form below. Someone will reach out to you in 2-3 Business days. We appreciate your patience. 
+
+
+</h3>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <label for="first-name">First Name:</label><br>
+    <!-- here I have used label to display what to be seen  -->
+    <!-- this is a text input so type is text-->
+    <input type="text" id="first-name" name="first-name" required><br><br>
+
+    <label for="last-name">Last Name:</label><br>
+    <!-- this is a text input so type is text-->
+    <input type="text" id="last-name" name="last-name" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <!-- this is a nymber input with type phone number input so type is tel-->
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br><br>
+
+    <label for="email">Email:</label><br>
+    <!-- this is a email input so type is email for understanding-->
+    <input type="email" id="email" name="email" required><br><br>
+    <!-- fruit questions -->
+
+<!--According to the instruction the list of three tier related questions are below-->
+1. what type of fruit tier you like most?<br>
+<select>
+<option>S</option>
+<option>A</option>
+<option>B</option>
+<option>C</option>
+<option>D</option>
+<option>F</option>
+</select>
+<br><br>
+
+2. Can you choose your favorite fruit<br>
+<select>
+<option>Mango</option>
+<option>Banana</option>
+<option>Grapes</option>
+<option>Lychee</option>
+<option>Watermelon</option>
+<option>Jackfruit</option>
+<option>Guava</option>
+<option>Melon</option>
+</select>
+<br><br>
+
+3. Which fruits you often consider healther and often you eat?<br>
+<input type="checkbox">Mango
+<input type="checkbox">Banana
+<input type="checkbox">Grapes
+<input type="checkbox">Guava
+<input type="checkbox">Melon
+
+    <label for="comments">Comments / Feedback:</label><br>
+    <textarea id="comments" name="comments" rows="5" placeholder="Write your message here..."></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+</main>
+    
+
+<!-- Footer page I plan to keep the content of footer page-->
+ 
+
+<footer class="page-footer">    
+ <h3>
+    
+        Thank you for visiting my fruits collection page. Hope this makes your day nice.<br>
+        &copy; 2025 Fruit powered by Saroj Kafle. 
+    
+ </h3>
+ </footer>
+<script> 
+<!-- AI-use note: I have used ChatGPT to creat simple alert code below. -->
+  // Wait for form submission
+  document.querySelector /*It help toIt help to find the contact form on the page*/(".contact-form").addEventListener("submit", function(event)/*It inform the browser to wait and see until form is being submitted*/ {
+    event.preventDefault();//It holds browser to send and refresh the page // prevent actual submission
+    alert("Thank you for contacting us. We will reach out to you soon.");// It shows a small popup box to inform sending message.
+  });
+</script>
+
+</body>
+</html>
+

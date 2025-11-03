@@ -1,0 +1,167 @@
+/* style.css */
+
+body {
+  font-family: sans-serif;
+  background-color: #6b98b3; /* the color is dragged randomly in a new pop up */
+}
+
+table {
+  border-collapse: collapse;
+  background-color: aquamarine; /* the color is dragged randomly in a new pop up */
+  width: 90%;
+  margin: 30px auto;
+}
+
+th, td {
+  font-style:oblique;
+  font-display: fallback;
+    border: 1px solid #444; /* the color is dragged randomly in a new pop up */
+  padding: 10px;
+  text-align: center;
+}
+
+/* now I am trying to  format the row of the table
+/* Title Row Style */
+.top-title {
+  background-color: black; /* the color is dragged randomly in a new pop up */
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Now tryin to keep Header Row Style like in example */
+.header-row {
+  background-color: #ffeaa7;
+  font-weight: bold;
+}
+
+/* Now trying to create a tier label cell with different */
+.tier {
+  background-color: #dfe6e9;
+  font-weight: bold;
+}
+.tier {
+  font-weight: bold;
+}
+
+/* thinking of a rainbow color in the table content, picking the color from help of AI and GPT */
+
+/* Now assigning the tier row with different colors  */
+.tier-S {
+  background-color: #c8e6c9; /* light green */
+}
+
+.tier-A {
+  background-color: #dcedc8; /* light lime */
+}
+
+.tier-B {
+  background-color: #fff9c4; /* light yellow */
+}
+
+.tier-C {
+  background-color: #ffe0b2; /* light orange */
+}
+
+.tier-D {
+  background-color: #ffccbc; /* light coral */
+}
+
+.tier-F {
+  background-color: #f8bbd0; /* light pink */
+}
+
+footer {
+background-color: aliceblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: unset;
+}
+
+page-footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #444;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* in this section, I am working with the navigation bar design.
+A lot of help about color and font, justify, gap, padding and decoration are referred from ChatGPT.
+
+/* Navigation Bar Style */
+.top-nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+/* for the navigation bar options */
+.top-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+/* the following commands are asked for decoration help from AI and GPTs */
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* the following commands are asked for decoration help from AI and GPTs */
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* the following commands are asked for decoration help from AI and GPTs */
+/* Optional: Section styling for clarity */
+section {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* the following commands are asked for decoration help from AI and GPTs */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+/* the following commands are asked for decoration help from AI and GPTs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* the following commands are asked for decoration help from AI and GPTs */
+.contact-form label {
+  font-weight: bold;
+}
+/* the following commands are asked for decoration help from AI and GPTs */
+.contact-form button {
+  background-color: #444;
+  color: white;
+  padding: 10px 16px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button: hover {
+  background-color: #222;
+}
