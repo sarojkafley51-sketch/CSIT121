@@ -1,0 +1,147 @@
+<!--This is bolier plate. I get it by typing ! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orioles of Maryland</title> <!-- this is the title of the page seen on the top of the chrome -->
+    <link rel="stylesheet" href="./style08.css">
+   <!-- I have used same style sheet from lab 07 and made changes accoirding to need-->
+
+<!-- I have different CSS file but I also embade some css here as well
+ making sure I meet 2 embaded css for course requiremnt, Professor Nook-->
+    <style>
+  /* this teo  embedded CSS rules I try not to alter the decoration */
+
+  /* I try to stick to standard css that I have for lab 07 */ 
+  p { margin: 10px; }      /* to add tiny spacing, safe and invisible */
+  img { border: none; }    /* this removes border around images */
+
+   /* Also one more CSS to make the attached pictures centers at the middle of the page */
+
+   /* help from MDN https://developer.mozilla.org/en-US/docs/Web/CSS */
+  img {
+    display: inline;
+    margin: 20px auto;  /* auto makes them go center */
+    vertical-align: middle;
+  }
+footer {
+    text-align: center;
+    border-top: 2px solid black; /* simple top border */
+    padding: 10px;
+    margin-top: 20px;
+    font-style: italic; /* signature-style text */
+  }
+</style>
+
+</head>
+<!--To make the navigation interactive I try to define a new class in body
+It will help me to select things in CSS-->
+<body class="orioles-page"> <!-- help learn from w 3 schools dot com-->
+
+    <!--Multipage Navigation are here here-->
+    <!-- I did same like lab 07 in this nav class section to create top row of multi page tab-->
+    <div class="topnav" id="myTopnav"> <!-- top navigation dicision-->
+  <a href="./index.html">Maryland</a>
+  <a href="./lab08-ravens.html">Baltimore Ravens</a>
+  <a href="./lab08-orioles.html" class="active">Baltimore Orioles</a>
+
+  <!-- This is copied from the w3schools dot com and some typo mistake corrcted by AI/GPT-->
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a> 
+        </div>
+
+
+<!-- ADDING SOME INTERACTIVE HTML, This is just like main home page-->
+ <!-- I have used the popular drop down detail element in HTML. I find them from 
+  Mozila Developer Network Wesbite 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details-->
+
+<details>
+  <summary>Do yo know who are the players at <strong>Camden Yards</strong></summary>
+  <p>It's no other than Orioles!</p>
+  <p>The Orioles are Maryland’s professional Baseball team. Go ORIOLES!</p>
+</details>
+
+
+<main>
+   
+
+    <h1>Baltimore Orioles</h1>
+    <h2>Believe More... believe in bird</h2>
+<p>
+The Baltimore Orioles are one of the oldest and most beloved baseball teams in the 
+country. They play at Oriole Park at Camden Yards, a stadium known for its beauty and 
+classic charm. The team has a long history filled with big wins, star players, and 
+unforgettable moments. Fans of the Orioles are loyal and proud, always cheering loud 
+for their home team.
+</p>
+
+<p>
+    The orange birdie is best in Baltimore. Baltimorians love them best. The team has a rich h
+    istory and a strong connection with its fans. They play in the American League and 
+    have won multiple championships throughout the decades.
+  </p>
+
+  <p>
+    The Orioles play their home games at Oriole Park at Camden Yards, a 
+    stadium famous for its classic design and fan-friendly experience. The ballpark is 
+    located in downtown Baltimore and is considered one of the most beautiful stadiums in 
+    Major League Baseball. On game days, the energy in the stadium is electric, and the 
+    crowd cheers with pride.
+  </p>
+
+  <p>
+    Over the years, the Orioles have had many legendary players wear their uniform, 
+    and young talent continues to rise through their system. Whether the team is in a 
+    rebuilding year or chasing a playoff spot, the fans always show up with loyalty and 
+    love. The Orioles represent not just a team, but a community that stands behind 
+    Maryland sports.
+  </p>
+<img src="./Orioles_banner.jpg" alt="This is home ground image of Orioles" title="This is home ground image of Orioles" width="400" height="400">
+
+<!-- Image source for banner (avoiding ad blocker pop up)
+https://www.google.com/search?sca_esv=9e05da7404d195f4&sxsrf=AE3TifPBJ6evLPEkQRu-wlHnC_
+4Hh0gKNg:1762705884808&q=camden+yards+wallpaper&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzcj0dp16
+eVym6Yzg_-ft-cxscLrYeoEoI17RLbOjAtyGi3H9OxFcsZAJfDexWMu0zRWHNqm79ZggX2ATXqfMiq8Q6F3p
+wETjyb4OOv-GR1xLOPWgjKiH2d-dXMX5QUoY1ZWNkYw&udm=2&sa=X&ved=2ahUKEwivyu2Qv-WQAxUXMlkFHWPU
+BmwQxKsJKAN6BAgjEAE&ictx=0&biw=1440&bih=754&dpr=2#vhid=y9wm5UsEOamelM&vssid=mosaic 
+-->
+<img src="./orioles_newlogo.webp" alt="This is logo of Orioles" title="Thi is logo of Orioles" width="400" height="400">
+
+<img src="./oriloes-costume.avif" alt="This is sample costume of Orioles" title="This is sample costume of Orioles" width="400" height="400">
+<!-- Image source from 
+ https://www.mlbshop.com/baltimore-orioles/mens-nike-white-baltimore-orioles-home-l
+ imited-custom-jersey/t-25222995+p-911157406059765+z-9-60035212?_
+ s=bm-mlbcom-recs-->
+
+ 
+</main>
+<!-- Footer -->
+
+  <footer class="page-footer">
+    &copy; Saroj Kafle 2025 - Legends play for Maryland
+  </footer>
+
+<!-- This javascript part is something new so I ask GPT to help me to control the top tripple bar link to make js interactive
+   here is the code I have now with AI help -->
+
+   <script>
+ // This small function helps open and close the 3-dot menu
+  // Some AI help and typo adjustment
+  //The work of this function is to run when users click the icon 
+  function toggleMenu() {
+    // It is getting navigation menu bar element with its ID
+    var x = document.getElementById("myTopnav");
+    // Verifying if the recent class name is just "topnav"
+    if (x.className === "topnav") {
+      // If it is true then adding other responsive class which help to make to fit menu on the small screen'
+      x.className += " responsive";
+      // Else, it can chnage to back in normal "topvav"
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</body>
+</html>

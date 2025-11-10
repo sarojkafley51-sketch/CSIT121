@@ -1,0 +1,141 @@
+<!--This is bolier plate. I get it by typing ! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravens of Maryland</title> <!-- this is the title of the page seen on the top of the chrome -->
+    <link rel="stylesheet" href="./style08.css">
+
+    <!-- I have used same style sheet from lab 07 and made changes accoirding to need-->
+
+<!-- I have different CSS file but I also embade some css here as well
+ making sure I meet 2 embaded css for course requiremnt, Professor Nook-->
+    <style>
+  /* this teo  embedded CSS rules I try not to alter the decoration */
+
+  /* I try to stick to standard css that I have for lab 07 */ 
+  p { margin: 10px; }      /* to add tiny spacing, safe and invisible */
+  img { border: none; }    /* this removes border around images */
+
+   /* Also one more CSS to make the attached pictures centers at the middle of the page */
+
+      /* help from MDN https://developer.mozilla.org/en-US/docs/Web/CSS */
+  img {
+    display: inline;
+    margin: 20px auto;  /* auto makes them go center */
+    vertical-align: middle;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 2px solid black; /* simple top border */
+    padding: 10px;
+    margin-top: 20px;
+    font-style: italic; /* signature-style text */
+  }
+
+</style>
+
+</head>
+
+<!--To make the navigation interactive I try to define a new class in body
+It will help me to select things in CSS-->
+<body class="ravens-page"> <!-- help learn from w 3 schools dot com-->
+
+    <!--Multipage Navigation are here here-->
+    <!-- I did same like lab 07 in this nav class section to create top row of multi page tab-->
+    <div class="topnav" id="myTopnav"> <!-- top navigation dicision-->
+  <a href="./index.html">Maryland</a>
+  <a href="./lab08-ravens.html" class="active">Baltimore Ravens</a>
+  <a href="./lab08-orioles.html">Baltimore Orioles</a>
+
+  <!-- This is copied from the w3schools dot com and some typo mistake corrcted by AI/GPT-->
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+</div>
+
+<!-- ADDING SOME INTERACTIVE HTML, This is just like main home page-->
+ <!-- I have used the popular drop down detail element in HTML. I find them from 
+  Mozila Developer Network Wesbite 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details-->
+
+<details>
+  <summary>Do yo know who are the players at <strong>M&T Stadium</strong></summary>
+  <p>It's no other than Ravens!</p>
+  <p>The Ravens are Maryland’s professional Fotball team. Go ORIOLES!</p>
+</details>
+
+<main>
+   
+
+
+    <h1>Baltimore Ravens</h1>
+    <h2>Play like a Ravens</h2>
+<p>
+The Baltimore Ravens are Maryland’s pride when it comes to football. 
+Known for their strong defense and passionate fanbase, the Ravens have made a big 
+mark in the NFL. They play at M&T Bank Stadium in Baltimore, and every game day brings 
+excitement to the city. Players like Ray Lewis and Lamar Jackson have become icons, 
+inspiring the next generation of football lovers.
+
+</p>
+
+<p>
+    The Baltimore Ravens are a professional football team based in Baltimore, Maryland. 
+    They are part of the National Football League (NFL) and play in the American Football
+     Conference (AFC) North division. Since joining the league in 1996, the Ravens have
+      become known for their strong defense and passionate fans.
+  </p>
+
+  <p>
+    The team plays its home games at M&T Bank Stadium, which is located near downtown 
+    Baltimore. The stadium fills with excitement on game days as fans dressed in purple 
+    cheer loudly for their team. From tailgating to touchdown celebrations, the Ravens 
+    experience is one that brings the whole city together.
+  </p>
+
+  <p>
+    Over the years, the Ravens have built a reputation as one of the toughest teams in the 
+    NFL. Legendary players like Ray Lewis and Ed Reed helped lead the team to Super Bowl 
+    victories, and new stars continue to rise each season. For many people in Maryland, 
+    cheering for the Ravens is more than just watching football — it’s a proud 
+    tradition.
+  </p>
+
+<img src="./Ravens-stadium.webp" alt="This is Ravens home ground" title="This is home ground of Ravens" width="400" height="400">
+
+<img src="./ravens_logo-1.webp" alt="This is logo of Ravens" title="This is logo of ravens" width="400">
+
+<img src="./ravens-costume.avif" alt="This is costume of ravens" title="This is costume of ravens" width="400">
+<!-- this is image dowmlaod from ravens website, online shop at baltimoreravens.com-->
+
+</main>
+<!-- Footer -->
+
+  <footer class="page-footer">
+    &copy; Saroj Kafle 2025 - Legends play for Maryland
+  </footer>
+
+<!-- This javascript part is something new so I ask GPT to help me to control the top tripple bar link to make js interactive
+   here is the code I have now with AI help -->
+
+   <script>
+ // This small function helps open and close the 3-dot menu
+  // Some AI help and typo adjustment
+  //The work of this function is to run when users click the icon 
+  function toggleMenu() {
+    // It is getting navigation menu bar element with its ID
+    var x = document.getElementById("myTopnav");
+    // Verifying if the recent class name is just "topnav"
+    if (x.className === "topnav") {
+      // If it is true then adding other responsive class which help to make to fit menu on the small screen'
+      x.className += " responsive";
+      // Else, it can chnage to back in normal "topvav"
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</body>
+</html>

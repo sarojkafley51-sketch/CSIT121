@@ -1,0 +1,151 @@
+<!--This is bolier plate. I get it by typing ! --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports of Maryland</title> 
+    <!-- this was the title of the page seen on the top of the chrome -->
+     <!-- This is now linking the style sheet-->
+    <link rel="stylesheet" href="./style08.css">
+    <!-- I have used same style sheet from lab 07 and made changes accoirding to need-->
+
+<!-- I have different CSS file but I also embade some css here as well
+ making sure I meet 2 embaded css for course requiremnt, Professor Nook-->
+    <style>
+  /* this teo  embedded CSS rules I try not to alter the decoration */
+
+  /* I try to stick to standard css that I have for lab 07 */ 
+  p { margin: 10px; }      /* to add tiny spacing, safe and invisible */
+  img { border: none; }    /*this  removes border around images *
+
+  /* Also one more CSS to make the attached pictures centers at the middle of the page */
+  img {
+    display: inline;
+    margin: 20px auto;  /* auto makes them go center */
+    vertical-align: middle;
+  }
+
+  /* Now i want to make my scigature style footer to come in the middle with a boarder */
+  /* help from Mozila developer network https://developer.mozilla.org/en-US/docs/Web/CSS */
+footer {
+    text-align: center;
+    border-top: 2px solid black; /* simple top border */
+    padding: 10px;
+    margin-top: 20px;
+    font-style: italic; /* signature-style text */
+  }
+</style>
+<!-- Footer -->
+
+</head>
+
+<!--To make the navigation interactive I try to define a new class in body
+It will help me to select things in CSS-->
+<body class="home-page"> <!-- help learn from w 3 schools dot com-->
+
+    <!--Multipage Navigation are here here-->
+    <!-- I did same like lab 07 in this nav class section to create top row of multi page tab-->
+    <div class="topnav" id="myTopnav"> <!-- top navigation dicision-->
+  <a href="./index.html" class="active">Maryland</a> 
+  <!-- This class="active helps to highlight color for current page during navigation"-->
+  <a href="./lab08-ravens.html">Baltimore Ravens</a>
+  <a href="./lab08-orioles.html">Baltimore Orioles</a>
+
+  <!-- This is copied from the w3schools dot com and some typo mistake corrcted by AI/GPT-->
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+</div>
+
+
+
+<!-- ADDING SOME INTERACTIVE HTML-->
+ <!-- I have used the popular drop down detail element in HTML. I find them from 
+  Mozila Developer Network Wesbite 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details-->
+
+<details>
+  <summary>Click to learn about the Amazing teams for <strong>Maryland</strong></summary>
+  <p>The Ravens are Maryland’s professional football team. Go RAVENS!</p>
+  <p>The Orioles are Maryland’s professional Baseball team. Go ORIOLES!</p>
+</details>
+<main>
+   <h1>Maryland</h1> 
+   <h2>Home of best players</h2>
+   
+   <!-- This text is just generated from GhatGPT. I asked 
+    chat GPT to write 2 paragraphs about sports 
+    in Maryland-->
+   <p>Maryland is home to some of the best sports teams and players in 
+    the country. From football to baseball, athletes from Maryland have shown dedication, 
+    talent, and teamwork on and off the field. 
+    Whether it’s a college game or a  professional match, the energy in Maryland stadiums 
+    is always electric.<br>
+
+    Teams like the Baltimore Ravens and the Baltimore Orioles have built 
+    strong legacies and loyal fan bases. Players who represent Maryland 
+    play with heart and pride, and many have gone on to become legends. 
+    Sports here aren’t just a game — they’re part of the community and culture.
+
+</p>
+<!-- Making the page more accessible so when I leave mouse over the picture it reads about it-->
+ <!-- alt is for accesibility, visually challenged people-->
+  <!-- Titile is for displaying text when mouse hovers on the page-->
+   <!-- width tag contols the size of the image. I use 400 on all of them-->
+
+<!-- the figure are downloaded from internet-->
+
+<!--Maryland map image  source: 
+https://www.etsy.com/listing/710748340/maryland-
+flag-state-outline-instant?gpla=1&gao=1&&utm_source=
+google&utm_medium=cpc&utm_campaign=shopping_us_-art_and_collectibles&utm_custom1=_
+k_CjwKCAiAlMHIBhAcEiwAZhZBUmBx1wieUKLUHczUAWCPp0hl1mrV-ma0BfA9gNL9M8jDCoXwqmQ_txoC0UYQAvD_B
+wE_k_&utm_content=go_22555721185_179700248099_751770838716_pla-314954651933_c__710748340_1
+39647150&utm_custom2=22555721185&gad_source=1&gad_campaignid=22555721185&gbraid=0AAAAADt
+cfRJ9Kt92QtipB5j0ak3tq-w5o&gclid=CjwKCAiAlMHIBhAcEiwAZhZBUmBx1wieUKLUHczUAWCPp0hl1mrV-ma0
+BfA9gNL9M8jDCoXwqmQ_txoC0UYQAvD_BwE-->
+
+
+<!-- Ravens logo image source
+ https://www.bestbuy.com/product/fan-creations-baltimore-ravens-24-logo-cutout-sign-
+ multicolor/J3WFXRJZTT/sku/10743000?ref=212&loc=Marketplace_22992658447&gclsrc=aw.ds&gad_
+ source=1&gad_campaignid=22988554769&gbraid=0AAAAAD-ORIi1tm7SmQazH0Xf2_pxrPlPJ&gclid=C
+ jwKCAiAlMHIBhAcEiwAZhZBUre6-aRWbOFh5MLYpFyvdFGOZK9mJ4imFo-Bo7wfigO4PvnpPsJD2hoCTbcQAvD_
+ BwE-->
+
+<!--Orioles logo image source-->
+
+  <img src="./flag_of_MD.webp" alt="This is map of Maryland" title="This is map of Maryland" width="400" >
+<img src="./ravens_logo-1.webp" alt="This is logo of Ravens" title="This is logo of Ravens" width="400">
+<img src="./orioles_newlogo.webp" alt="This is logo of Orioles" title="This is logo od Orioles" width="400" height="400">
+
+</main>
+<!-- Footer -->
+
+  <footer class="page-footer">
+    &copy; Saroj Kafle 2025 - Legends play for Maryland
+  </footer>
+
+  <!-- Running the same top of the java script that I learn from w 3 schools dot com-->
+ 
+  <!-- This JavaScript part is something new so I ask GPT to help me to control the top triple bar link to make is interactive
+   here is the code I have now with AI help -->
+
+   <script>
+  // This small function helps open and close the 3-dot menu
+  // Some AI help and typo adjustment
+  //The work of this function is to run when users click the icon 
+  function toggleMenu() {
+    // It is getting navigation menu bar element with its ID
+    var x = document.getElementById("myTopnav");
+    // Verifying if the recent class name is just "topnav"
+    if (x.className === "topnav") {
+      // If it is true then adding other responsive class which help to make to fit menu on the small screen'
+      x.className += " responsive";
+      // Else, it can chnage to back in normal "topvav"
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+</body>
+</html>
