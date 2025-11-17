@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Lab employee.xml: This file format keeps all the employee details in an organized XML format.
+<!-- Lab09 employee.xml: This file format keeps all the employee details in an organized XML format.
 In this format, we keep records of employee name, ID, position, department, and room number. -->
 
 <employees>
