@@ -1,0 +1,70 @@
+<!-- Declaration of XML with its version and text encoding -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lab employee.xml: This file format keeps all the employee details in an organized XML format.
+In this format, we keep records of employee name, ID, position, department, and room number. -->
+
+<employees>
+<!-- This is the first employee's details -->
+<employee id="D1001">
+  <fullname>Saroj Kafle</fullname>
+  <position>Network Engineer</position>
+  <department>Information Technology</department>
+  <room>300 C</room>
+</employee>
+  
+<!-- This is the second employee's details -->
+<employee id="D1002">
+  <fullname>Sajana Bhattarai</fullname>
+  <position>Project Manager</position>
+  <department>Management</department>
+  <room>300 A</room>
+</employee>
+
+<!-- This is the third employee's details -->
+<employee id="D1003">
+  <fullname>Rashmi Patel</fullname>
+  <position>Accountant</position>
+  <department>Finance</department>
+  <room>300 D</room>
+</employee>
+
+<!-- This is the forth employee's details -->
+<employee id="D1004">
+  <fullname>Manoj Kafle</fullname>
+  <position>Civil Engineer</position>
+  <department>Construction</department>
+  <room>200 E</room>
+</employee>
+
+<!-- This is the fifth employee's details -->
+<employee id="D1005">
+  <fullname>Gautam Dahal</fullname>
+  <position>CEO</position>
+  <department>Management</department>
+  <room>400 D</room>
+</employee>
+
+<!-- This is the sixth employee's details -->
+<employee id="D1006">
+  <fullname>Ranjan Aryal</fullname>
+  <position>HR Director</position>
+  <department>HR</department>
+  <room>400 B</room>
+</employee>
+
+<!-- This is the seventh employee's details -->
+<employee id="D1007">
+  <fullname>William Smith</fullname>
+  <position>Communication Officer</position>
+  <department>Communication</department>
+  <room>400 A</room>
+</employee>
+
+<!-- This is the eight employee's details -->
+<employee id="D1008">
+  <fullname>Amisha Patel</fullname>
+  <position>Transportation Manager</position>
+  <department>Transportation</department>
+  <room>300 B</room>
+</employee>
+</employees>
