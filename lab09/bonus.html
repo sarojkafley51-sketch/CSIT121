@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bonus - Employee Data</title>
+<!-- This JavaScript grabs employee details from an external XML file (employee.xml)
+  and shows them in a table when you hit the button. I came up with this using some 
+  ideas and guidance from ChatGPT: https://chatgpt.com/c/691a6da0-8460-8329-af1e-a2247bce7b4e-->
+<script>
+var open = false;
+
+// This function handles showing or hiding the employee data table.
+// Click the button and it checks if the table’s already open.
+// If it’s not, it calls loadXML(), shows the table, and switches the button text to “Close Employee Data.
+// If the table’s open, it clears everything out and changes the button text back to “Get Employee Data.
+function toggleData() {
+  if (open == false) {
+    loadXML();
+    document.getElementById("btn").innerHTML = "Close Employee Data";
+    open = true;
+  } else {
+    document.getElementById("show").innerHTML = "";
+    document.getElementById("btn").innerHTML = "Get Employee Data";
+    open = false;
+  }
+}
+
+function loadXML() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var xml = this.responseXML;
+      // Creating table header row
+      var table = "<table border='1'><tr><th>ID</th><th>Name</th><th>Position</th><th>Department</th><th>Room</th></tr>";
+      var emp = xml.getElementsByTagName("employee");
+      for (var i = 0; i < emp.length; i++) {
+        var id = emp[i].getAttribute("id");
+        var name = emp[i].getElementsByTagName("fullname")[0].childNodes[0].nodeValue;
+        var pos = emp[i].getElementsByTagName("position")[0].childNodes[0].nodeValue;
+        var dep = emp[i].getElementsByTagName("department")[0].childNodes[0].nodeValue;
+        var room = emp[i].getElementsByTagName("room")[0].childNodes[0].nodeValue;
+        table += "<tr><td>"+id+"</td><td>"+name+"</td><td>"+pos+"</td><td>"+dep+"</td><td>"+room+"</td></tr>";
+      }
+      table += "</table>";
+      document.getElementById("show").innerHTML = table;
+    }
+  };
+  xhttp.open("GET", "employee.xml", true);
+  xhttp.send();
+}
+</script>
+</head>
+
+<body>
+
+<div>
+
+<button id="btn" onclick="toggleData()">Get Employee Data</button>
+<div id="show"></div>
+</div>
+
+
+</body>
+</html>
