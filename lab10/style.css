@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: #000707;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+     background-image: url("./BaltimoreMap.jpeg");
+     background-size: cover;
+     filter: brightness(80%);
+     padding-top: 20px;
+     
+}
+
+header {
+    padding: 20px 35 px;
+    background-color: #000405;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+   
+}
+
+header a {
+    color: #fce138;
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+    margin: 8px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+header h4 {
+    color: #19913ff1;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.topic-of-assignment {
+    
+    list-style-type: disc; 
+    margin-left: 30px;
+
+}
+#overview {
+    width: 60%;               /* controls the size of the box */
+    margin: 30px auto;        /* THIS centers the box like MS Word */
+    padding: 20px;             
+    border: 2px solid black;  /* border around the box */
+    background-color: white;  /* optional */
+    color: rgb(4, 49, 49);
+    text-align: left;       /* left the text inside */
+    border-radius: 10px;      /* smooth corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+#details {
+    width: 60%;               /* controls the size of the box */
+    margin: 30px auto;        /* THIS centers the box like MS Word */
+    padding: 20px;             
+    border: 2px solid black;  /* border around the box */
+    background-color: white;  /* optional */
+    color: rgb(4, 49, 49);
+    text-align: left;       /* left the text inside */
+    border-radius: 10px;      /* smooth corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+footer {
+    background: #fce138;
+    width:100%;
+    padding: 20px 15px;
+    float: left;
+}
+
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+    float: left;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer {
+    color: #196991f1;
+}
